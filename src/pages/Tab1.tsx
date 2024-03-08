@@ -22,11 +22,11 @@ const Tab1: React.FC = () => {
       <img alt="Silhouette of mountains" src="../src/assets/img/avatar.jpg
     " />
       <IonCardHeader>
-        <IonCardTitle>Card Title</IonCardTitle>
-        <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        <IonCardTitle>marychris</IonCardTitle>
+        <IonCardSubtitle>student</IonCardSubtitle>
       </IonCardHeader>
 
-      <IonCardContent>Here's a small text description for the card content. Nothing more, nothing less.</IonCardContent>
+      <IonCardContent> Nothing more, nothing less.</IonCardContent>
     </IonCard>
       </IonContent>
     </IonPage>
