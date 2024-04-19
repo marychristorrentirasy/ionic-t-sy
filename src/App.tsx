@@ -11,7 +11,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { calculatorOutline, personOutline, speedometerOutline } from 'ionicons/icons';
+import { calculatorOutline, homeOutline, personOutline, speedometerOutline } from 'ionicons/icons';
 import Home from './pages/Home';
 import Profile from './pages/profile';
 import Tab2 from './pages/clickcounter';
@@ -53,6 +53,10 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
+          <IonTabButton tab="home" href="/home">
+            <IonIcon aria-hidden="true" icon={homeOutline} />
+            <IonLabel>Home</IonLabel>
+          </IonTabButton>
           <IonTabButton tab="profile" href="/profile">
             <IonIcon aria-hidden="true" icon={personOutline} />
             <IonLabel>Profile</IonLabel>
