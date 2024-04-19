@@ -14,8 +14,8 @@ import { IonReactRouter } from '@ionic/react-router';
 import { calculatorOutline, homeOutline, personOutline, speedometerOutline } from 'ionicons/icons';
 import Home from './pages/Home';
 import Profile from './pages/profile';
-import Tab2 from './pages/clickcounter';
-import Tab3 from './pages/calculator';
+import ClickCounter from './pages/clickcounter'; // Import ClickCounter component
+import Calculator from './pages/calculator'; // Import Calculator component
 
 import '@ionic/react/css/core.css';
 import '@ionic/react/css/normalize.css';
@@ -36,20 +36,20 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/Home">
+          <Route exact path="/home">
             <Home />
           </Route>
-          <Route exact path="/tab1">
+          <Route exact path="/profile">
             <Profile />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/clickcounter">
+            <ClickCounter />
           </Route>
-          <Route exact path="/tab3">
-            <Tab3 />
+          <Route exact path="/calculator">
+            <Calculator />
           </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/home" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -61,11 +61,11 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={personOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="clickcounter" href="/clickcounter">
             <IonIcon aria-hidden="true" icon={speedometerOutline} />
             <IonLabel>Click Counter</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="calculator" href="/calculator">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />
             <IonLabel>Calculator</IonLabel>
           </IonTabButton>
