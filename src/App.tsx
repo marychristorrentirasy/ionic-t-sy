@@ -12,7 +12,7 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { calculatorOutline, homeOutline, personOutline, speedometerOutline } from 'ionicons/icons';
-import Home from './pages/Home';
+import Home from './pages/Todolist';
 import Profile from './pages/profile';
 import ClickCounter from './pages/clickcounter'; // Import ClickCounter component
 import Calculator from './pages/calculator'; // Import Calculator component
